@@ -1,0 +1,38 @@
+/* Definindo as animações de fade */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  /* Aplicando as animações à página de splash */
+  .splash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .splash img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Adicionando uma animação de fade out após 4 segundos */
+  .fade-out {
+    animation: fadeOut 1s ease-out;
+  }
